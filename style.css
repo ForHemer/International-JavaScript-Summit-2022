@@ -1,0 +1,202 @@
+/* Import Cocogoose and Lato fonts */
+@font-face {
+    font-family: 'Cocogoose';
+    src: url("fonts/Cocogoose/Cocogoose Pro Italic-trial.ttf");
+  }
+  
+  @font-face {
+    font-family: 'Lato';
+    src: url("fonts/Lato/Lato-Regular.woff");
+  }
+  
+  /* All viewports */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Mobile version */
+@media only screen and (max-width: 768px) {
+    /* Stylize main */
+    main {
+        background-image: url("images/mobile_intro_bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* Stylize Header */
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+    }
+
+    /* Hide top-header container, logo-container, menu, campaign button */
+    .top-header,
+    .logo-container, 
+    .menu,
+    .campaign,
+    .whole-program {
+      display: none;
+    }
+
+    /* Stylize hamburger button */
+    .btn-hamburger-menu {
+        position: fixed;
+        margin-top: 19px;
+        margin-left: 16px;
+        left: 0;
+        cursor: pointer;
+        size: 7x;
+        width: 5px;
+        height: 150px;
+        z-index: 300;
+      }
+      
+      .btn-hamburger-menu:active {
+        width: 25px;
+      }
+
+      /* Stylize Introduction section */
+      #Introduction {
+          display: flex;
+          flex-direction: column;
+          margin-left: 16px;
+          margin: 100px 16px 0 16px;
+          height: 450px;
+      }
+
+      #Introduction .greetings {
+          font-family: '',sans-serif;
+          font-size: 23px;
+          color: #ec5242;          
+      }
+
+      #Introduction .event-title {
+          background: url("images/h1_background.jpg") -20px -20px no-repeat;
+          font-family: 'Cocogoose',sans-serif;
+          font-size: 33px;
+          margin-top: 15px;        
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+      }
+
+      #Introduction .event-description {
+          margin-top: 35px;
+          font-family: 'Lato', sans-serif;
+          /* text-align: justify; */
+          font-size: 18px;
+          color: #272a31;
+          border: 4px white solid;
+          background-color: #f7f7f8;
+          padding: 10px;
+        }
+
+        #Introduction .event-date {
+            margin-top: 25px;
+            font-family: 'Cocogoose', sans-serif;
+            font-size: 20px;
+            color: #575757;
+
+        }
+
+        #Introduction .event-place {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-family: 'Lato', sans-serif;
+            font-size: 18px;
+            color: #272a31;
+        }
+
+        /* Stylize main-program */
+        #main-program {
+            display: flex;
+            align-items: center;
+            background-image: url("images/pattern.png");            
+            background-color: #333;            
+            flex-direction: column;                    
+        }
+
+        #main-program .program-title {
+            font-family: 'Lato', sans-serif;
+            padding-top: 50px;
+            color: white;
+            text-align: center;
+        }
+
+        .separator {
+            width: 53px;
+            height: 16px;
+            border-bottom: 1px solid #ef513c;
+            margin: 0 auto 54px;
+        }
+
+        .program-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .program-list li {
+            display: flex;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
+            list-style-type: none;
+            padding-top: 10px;
+            margin-left: 16px;
+            margin-right: 16px;
+            height: 110px;
+            
+        }
+
+        .program-list .icon {
+            width: 64px;
+            height: 58px;            
+        }
+
+        .program-list .subtitle {
+            font-family: 'Cocogoose', sans-serif;
+            width: 96px;
+            font-size: 16px;
+            color:#ef513c;
+            padding-top: 30px;
+                       
+        }
+
+        .program-list .description {
+            font-family: 'Lato', sans-serif;
+            color: white;
+            font-size: 16px;
+            padding-top: 10px;
+            padding-right: 3px;
+            
+            width: 235px;                       
+        }
+
+        #main-program .btn_join-program {
+            margin-top: 50px;
+            background-color: #e55242;
+            color: white;
+            font-family: 'Cocogoose', sans-serif;
+            width: 300px;
+            height: 80px;
+            margin: 40px 0 40px 0;
+            cursor: pointer;
+            border-style: none;           
+        }
+
+        /* Stylize list of speakers */
+        #Speakers {
+
+        }
+
+}
+
+/* Desktop version */
+@media only screen and (min-width: 769px) {
+
+}
+  
