@@ -5,57 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-1">
   <meta name="description" content="CC Global Summit 2015 about page">
   <meta name="Author" content="Hemerson Foreste">
-  <link rel="stylesheet" type="text/css" href="Nameofthestylesheet.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
   <title>CC Global Summit 2015 about page</title>
 </head>
 <body> 
-  <header>
-      <div class="top-header">
-          <ul class="top-header-links">
-            <li><a href="" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="" title="twitter"><i class="fab fa-twitter"></i></a></li>
-            <li>English</li>
-            <li>My Page</li>
-            <li>Logout</li>
+    <main class="main-about">
+      <header>
+        <div class="top-header">
+            <ul class="top-header-links">
+              <li><a href="" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="" title="twitter"><i class="fab fa-twitter"></i></a></li>
+              <li>English</li>
+              <li>My Page</li>
+              <li>Logout</li>
+            </ul>
+        </div>
+        <div class="logo-container">
+          <a href="index.html" class="home" title="home" class="logo"><img src="images/logo.png" alt="logo"></a>
+        </div>
+        <nav class="default-navbar">
+          <i class="fas fa-bars btn-hamburger-menu"></i>
+          <ul class="menu">
+            <li><a href="index.html" class="home" title="home"><i class="fas fa-home"></i></a></li> 
+            <li><a href="#About" class="about">About</a></li>
+            <li><a href="#Program" class="program">Program</a></li>
+            <li><a href="#Join" class="join">Join</a></li>
+            <li><a href="#Sponsor" class="sponsor">Sponsor</a></li>
+            <li><a href="#News" class="news">News</a></li>
           </ul>
-      </div>
-      <div class="logo-container">
-        <a href="index.html" class="home" title="home" class="logo"><img src="images/logo.png" alt="logo"></a>
-      </div>
-    <nav class="default-navbar">
-      <i class="fas fa-bars btn-hamburger-menu"></i>
-      <ul class="menu">
-        <li><a href="index.html" class="home" title="home"><i class="fas fa-home"></i></a></li> 
-        <li><a href="#About" class="about">About</a></li>
-        <li><a href="#Program" class="program">Program</a></li>
-        <li><a href="#Join" class="join">Join</a></li>
-        <li><a href="#Sponsor" class="sponsor">Sponsor</a></li>
-        <li><a href="#News" class="news">News</a></li>
-      </ul>
-      <button class="campaign" type="button">CC Campaign</button>
-    </nav>
-  </header>
+          <button class="campaign" type="button">CC Campaign</button>
+        </nav>
+      </header>
 
-  <section id="Introduction">
-    <p class="greetings">"Hello! Sharing World"</p>
-    <h1 class="event-title">CREATIVE COMMONS GLOBAL SUMMIT 2015</h1>
-    <p class="event-description">The Global Summit brings together the community of experts, academics, and activists who
-        comprise the Global Trade affiliate network in a different country every two years. This year, we hope to expand
-        our invitation list including organizations and individuals who want to work with us on shared projects that advance
-        the cause of the commons, free culture and open knowledge. So if you're active and engaged in the worlds of open content
-         and knowledge - free software advocates, Wikipedians, Open knowledge, galleries, libraries, museums, archives,
-        governments and foundations, lawyers, and activists - we hope you'll consider joining us this year to build a stronger,
-         more vibrant commons together.
-    </p>
-    
-    <div class="contact-us">
-        <p>Please contact us per Email for any further questions about CC Global Summit 2015! <br />
-            <a class="email" href="mailto:ccsummit2015@cckorea.org">ccsummit2015@cckorea.org <i class="fas fa-chevron-right"></i></a>
+      <section id="Introduction">
+        <p class="greetings">"Hello! Sharing World"</p>
+        <h1 class="event-title">CREATIVE COMMONS GLOBAL SUMMIT 2015</h1>
+        <p class="event-description">The Global Summit brings together the community of experts, academics, and activists who
+            comprise the Global Trade affiliate network in a different country every two years. This year, we hope to expand
+            our invitation list including organizations and individuals who want to work with us on shared projects that advance
+            the cause of the commons, free culture and open knowledge. So if you're active and engaged in the worlds of open content
+            and knowledge - free software advocates, Wikipedians, Open knowledge, galleries, libraries, museums, archives,
+            governments and foundations, lawyers, and activists - we hope you'll consider joining us this year to build a stronger,
+            more vibrant commons together.
         </p>
         
-    </div>
-  </section>
+        <div class="contact-us">
+            <p>Please contact us per Email for any further questions about CC Global Summit 2015! <br />
+                <a class="email" href="mailto:ccsummit2015@cckorea.org">ccsummit2015@cckorea.org <i class="fas fa-chevron-right"></i></a>
+            </p>
+            
+        </div>
+      </section>
+    </main>
+
 
   <section id="ccgs2015-logo">
       <h2 class="ccgs2015-logo-title">Creative Commons Global Summit 2015 Logo</h2>
@@ -85,8 +88,20 @@
     </div>
   </section>
 
+  <section id="Partner">
+    <h2 class="Partner-title">Partner</h2>
+    <div class="separator"></div>
+    <ul class="Partner-list">
+        <li><img class="Partner-list-item" src="images/partners/mozilla.png" alt="mozilla"></li>
+        <li><img class="Partner-list-item" src="images/partners/google.png" alt="google"></li>
+        <li><img class="Partner-list-item" src="images/partners/Naver.png" alt="Naver"></li>
+        <li><img class="Partner-list-item" src="images/partners/kakao.png" alt="Kakao"></li>
+        <li><img class="Partner-list-item" src="images/partners/airbnb.png" alt="Airbnb"></li>
+    </ul>
+</section>
+
   <footer id="footer">
-    <img class="commons-creative-logo" src="images/logo_creative-common-korea.png" alt="commons creative logo">
+    <img class="commons-creative-logo" src="images/cck-logo1.png" alt="commons creative logo">
     <p class="copyright">2015 Creative Commons Korea. Some Rights Reserved.</p>
   </footer>
 

@@ -19,10 +19,16 @@
   /* Mobile version */
 @media only screen and (max-width: 768px) {
     /* Stylize main */
-    main {
+    .main-index {
         background-image: url("images/mobile_intro_bg.png");
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .main-about {
+        background-image: url("images/about_bg_01.png");
+        background-repeat: no-repeat;
+        background-size:cover;
     }
 
     /* Stylize Header */
@@ -30,8 +36,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        background-color: red;
+        align-items: center;        
     }
 
     /* Hide top-header container, logo-container, menu, campaign button */
@@ -50,14 +55,12 @@
         margin-left: 16px;
         left: 0;
         cursor: pointer;
-        size: 7x;
-        width: 5px;
-        height: 150px;
+        width: 50%;        
         z-index: 300;
       }
       
       .btn-hamburger-menu:active {
-        width: 25px;
+        width: 80%;
       }
 
       /* Stylize Introduction section */
@@ -114,10 +117,12 @@
         /* Stylize main-program */
         #main-program {
             display: flex;
+            flex-direction: column; 
+            justify-content: center;
             align-items: center;
             background-image: url("images/pattern.png");            
             background-color: #333;            
-            flex-direction: column;                    
+                               
         }
 
         #main-program .program-title {
@@ -136,16 +141,18 @@
 
         .program-list {
             display: flex;
-            flex-direction: column;
+            flex-direction: column;           
             gap: 15px;
         }
 
         .program-list li {
             display: flex;
+            align-items: center;
+            justify-content: center;
             gap: 12px;
             background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
             list-style-type: none;
-            padding-top: 10px;
+            /* padding-top: 10px; */
             margin-left: 16px;
             margin-right: 16px;
             height: 110px;
@@ -159,21 +166,16 @@
 
         .program-list .subtitle {
             font-family: 'Cocogoose', sans-serif;
-            width: 96px;
             font-size: 16px;
             color:#ef513c;
-            padding-top: 30px;
-                       
+            width: 25%;                     
         }
 
         .program-list .description {
             font-family: 'Lato', sans-serif;
             color: white;
             font-size: 16px;
-            padding-top: 10px;
-            padding-right: 3px;
-            
-            width: 235px;                       
+            width: 55%;                                         
         }
 
         #main-program .btn_join-program {
@@ -190,8 +192,69 @@
 
         /* Stylize list of speakers */
         #Speakers {
-
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 16px 0 16px;
         }
+
+        #Speakers .featured-speakers {
+           font-family: 'Lato', sans-serif;
+           font-weight: bolder;
+        }
+
+        /* Stylize partners */
+        #Partner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #333;
+            margin-top: 50px;
+        }
+
+        #Partner .Partner-title {
+            font-family: 'Lato', sans-serif;
+            font-weight: bolder;
+            color: white;
+            padding-top: 50px;            
+         }
+
+         #Partner .Partner-list {
+             display: flex;
+             flex-direction: row;
+             align-items: center;
+             justify-content: center;
+             flex-wrap: wrap;
+             gap: 10px;
+             list-style-type: none;
+             list-style-position: outside;
+             margin: -20px 0 50px 0;             
+         }
+
+         #Partner .Partner-list-item {
+            width: 120px;
+            height: auto;            
+        }
+
+        #footer {
+            margin: 50px 0 50px 0;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #footer .commons-creative-logo {
+            width: 40%
+        }
+
+        #footer .copyright {
+            width: 40%;
+            font-family: 'Lato', sans-serif;
+            font-size: 15px;
+        }
+
 
 }
 
