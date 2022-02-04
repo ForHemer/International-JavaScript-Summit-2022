@@ -3,7 +3,9 @@
 # International JavaScript Summit 2022
 
 This is a responsive implementation of a **fictitious International Summit** for the needs of my **Capstone Project**, incorporating all the skills I've learned during module 1.
+![Screenshot from 2022-02-04 07-27-05](https://user-images.githubusercontent.com/88809610/152536288-2a5e440e-a6be-4415-9384-ed2a10bc39ab.png)
 
+![Screenshot from 2022-02-04 07-27-22](https://user-images.githubusercontent.com/88809610/152536314-c338931b-d9cd-4a0d-8685-687faf2f7060.png)
 
 
 
