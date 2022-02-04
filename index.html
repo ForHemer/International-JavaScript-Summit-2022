@@ -7,46 +7,47 @@
   <meta name="Author" content="Hemerson Foreste">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-  <title>CC Global Summit 2015 home page</title>
+  <title>International javaScript Summit home page</title>
 </head>
 <body>
- <main class="main-index">
+    <main class="main-index">
     <header>
         <div class="top-header">
             <ul class="top-header-links">
-              <li><a href="" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="" title="twitter"><i class="fab fa-twitter"></i></a></li>
+              <li><a class="facebook" href="" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a class="twitter" href="" title="twitter"><i class="fab fa-twitter"></i></a></li>
               <li>English</li>
               <li>My Page</li>
               <li>Logout</li>
             </ul>
         </div>
-        <div class="logo-container">
-          <a href="index.html" class="home" title="home" class="logo"><img src="images/logo.png" alt="logo"></a>
-        </div>
+          
+          <div class="btn-hamburger-menu mobile-version"><i class="fas fa-bars"></i></div>        
+          <div class="btn-close mobile-version"><i class="fas fa-times"></i></div> 
          <nav class="default-navbar">
-          <i class="fas fa-bars btn-hamburger-menu"></i>
+            <div class="logo-container">
+                <a href="index.html" class="logo" title="home" class="logo"><img src="images/LogoHemer.png" alt="logo"></a>
+            </div>                          
           <ul class="menu">
-              <li><a href="index.html" class="home" title="home"><i class="fas fa-home"></i></a></li> 
-              <li><a href="#About" class="about">About</a></li>
-              <li><a href="#Program" class="program">Program</a></li>
-              <li><a href="#Join" class="join">Join</a></li>
-              <li><a href="#Sponsor" class="sponsor">Sponsor</a></li>
-              <li><a href="#News" class="news">News</a></li>
+              <li><a href="index.html" class="home-index menu-items" title="home"><i class="fas fa-home"></i></a></li> 
+              <li><a href="about.html" class="about-index menu-items">About</a></li>
+              <li><a href="" class="program menu-items">Program</a></li>
+              <li><a href="" class="join menu-items">Join</a></li>
+              <li><a href="" class="sponsor menu-items">Sponsor</a></li>
+              <li><a href="" class="news menu-items">News</a></li>
           </ul>
           <button class="campaign" type="button">CC Campaign</button>
          </nav>
     </header>
-  
+
     <section id="Index-Introduction">
-      <p class="greetings">"Hello! Sharing World"</p>
-      <h1 class="event-title">CREATIVE COMMONS GLOBAL SUMMIT 2015</h1>
-      <p class="event-description">A joyful celebration believing in the value of openness and sharing, 
-         creating a positive change with people from over 80 countries is taking
-          place in October, in Korea.
+      <p class="greetings">"We connect developers!"</p>
+      <h1 class="event-title">INTERNATIONAL JAVASCRIPT SUMMIT 2022</h1>
+      <p class="event-description">The JavaScript world is constantly evolving and there’s something
+           new to learn every day. Join us to be a part of that change and stay on top of the latest trends.
       </p>
-      <h2 class="event-date">2015.10.15(THU) ~ 16(FRI)</h2>
-      <p class="event-place">@ National Museum of Korea, Art Center Nabi and more</p>
+      <h2 class="event-date">2022.10.13(THU) ~ 16(SUN)</h2>
+      <p class="event-place">@ Caribe Convention Center of Haiti or Online.</p>
     </section>
  </main>
   
@@ -99,6 +100,9 @@
     <h2 class="featured-speakers">Featured Speakers</h2>
     <div class="separator"></div>
     <!-- The list of speakers will populated dynamically using javaScript -->
+    <div class="speakerslist">
+
+    </div>
   </section>
 
   <section id="Partner">
@@ -110,14 +114,15 @@
           <li><img class="Partner-list-item" src="images/partners/Naver.png" alt="Naver"></li>
           <li><img class="Partner-list-item" src="images/partners/kakao.png" alt="Kakao"></li>
           <li><img class="Partner-list-item" src="images/partners/airbnb.png" alt="Airbnb"></li>
-      </ul>
+          <li><img class="Partner-list-item" src="images/partners/INFOPROMO -LOGO.webp" alt="infopromo"></li>
+        </ul>
   </section>
 
   <footer id="footer">
-    <img class="commons-creative-logo" src="images/cck-logo1.png" alt="commons creative logo">
-    <p class="copyright">2015 Creative Commons Korea. Some Rights Reserved.</p>
+    <img class="commons-creative-logo" src="images/LogoHemer.png" alt="logo">
+    <p class="copyright">2022 International JavaScript Summit. Some Rights Reserved.</p>
   </footer>
 
-  <script src="Nameofthescript.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

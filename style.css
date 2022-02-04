@@ -17,7 +17,51 @@
   }
 
   /* Mobile version */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
+    /* Stylize mobile menu */
+    .default-navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #818ca3fa;
+        height: 650px;
+        position: relative;
+        width: 100%;
+        z-index: 300;        
+    }   
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding-top: 50px;
+    background-color: #1e222b;
+    position: fixed;
+    height: 650px;
+    width: 100%;
+    z-index: 30;
+  }  
+
+  .menu-items {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    font-family: 'Cocogoose', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 48px;
+    transition: font-size 700ms ease-in-out;
+    /* border-top: 1px solid #e55242; */
+    width: 100%;
+  }
+
+  .menu-items:hover {
+    font-size: 18px;
+    text-decoration: underline;
+  }
+
     /* Stylize main */
     .main-index {
         background-image: url("images/mobile_intro_bg.png");
@@ -40,19 +84,31 @@
     }
 
     /* Hide top-header container, logo-container, menu, campaign button */
-    .top-header,
+     .top-header,
+    .btn-close,
     .desktop-version,
-    .logo-container, 
-    .menu,
+    .logo-container,
+    .default-navbar,
     .campaign,
     .whole-program {
       display: none;
-    }
+    } 
+
+    .btn-close {
+        font-size: 25px;
+        position: absolute;
+        right: 17px;
+        top: 13px;
+      }
+    
+      .btn-close:active {
+        font-size: 30px;
+      }
 
     /* Stylize hamburger button */
     .btn-hamburger-menu {
         position: fixed;
-        margin-top: 19px;
+        margin-top: 59px;
         margin-left: 16px;
         left: 0;
         cursor: pointer;
@@ -86,6 +142,7 @@
           margin-top: 15px;        
           -webkit-text-fill-color: transparent;
           -webkit-background-clip: text;
+          width: 100%;
       }
 
       #Index-Introduction .event-description {
@@ -125,7 +182,7 @@
         }
   
         #About-Introduction .greetings {
-            font-family: '',sans-serif;
+            font-family: 'Lato',sans-serif;
             font-size: 23px;
             text-align: center;
             margin-top: 40px;
@@ -189,7 +246,6 @@
             gap: 12px;
             background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
             list-style-type: none;
-            /* padding-top: 10px; */
             margin-left: 16px;
             margin-right: 16px;
             height: 110px;
@@ -241,17 +297,62 @@
            font-weight: bolder;
         }
 
+        #Speakers .speakerslist {
+            display: flex;
+            gap: 35px;
+            flex-direction: column;
+            margin-top: -20px;            
+        }
+
+        #Speakers .speaker-item {
+            display: flex;
+            gap: 10px;            
+        }
+
+        #Speakers .speaker-picture {
+            width: 178px;
+            height: 177px;
+        }
+
+        #Speakers .speaker-name {
+            font-family: 'Cocogoose', sans-serif;
+            color: #3f3333;
+            font-size: 18px;
+        }
+
+        #Speakers .speaker-title {
+            margin-top: 10px;
+            font-family: 'Lato', sans-serif;
+            color:#ef513c;
+            font-size: 16px;
+        }
+
+        .hrline {
+            margin-top: 15px;
+            width: 10%;
+            height: 1px;
+        }
+
+        #Speakers .speaker-achievement {
+            margin-top: 10px;
+            font-family: 'Lato', sans-serif;
+            color: #3f3333;
+            font-size: 14px;
+        }
+
+
         /* Stylize partners in index.html */
         #Partner {
             display: flex;
             flex-direction: column;
             align-items: center;
             background-color: #333;
-            margin-top: 50px;
+            margin-top: 50px;            
         }
 
         #Partner .Partner-title {
             font-family: 'Lato', sans-serif;
+            font-size: 20px;
             font-weight: bolder;
             color: white;
             padding-top: 50px;            
@@ -266,7 +367,7 @@
              gap: 10px;
              list-style-type: none;
              list-style-position: outside;
-             margin: -20px 0 50px 0;             
+             margin: -20px 0 50px 0;           
          }
 
          #Partner .Partner-list-item {
@@ -310,7 +411,7 @@
         }
 
         #ccgs2015-logo {
-            margin: 80px 16px 0 16px;
+            margin: 120px 16px 0 16px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -363,6 +464,12 @@
             color: #272a31; 
         }
 
+        .past-summit {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
         .ccgs2013 {
             margin-top: 30px;
             display: flex;
@@ -371,7 +478,7 @@
             justify-content: center;
             width: 100%;
             height: 200px;
-            background-image: url("images/about2.png");
+            background-image: url("images/Conf-1.jpg");
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -384,7 +491,7 @@
             justify-content: center;
             width: 100%;
             height: 200px;
-            background-image: url("images/about1.png");
+            background-image: url("images/Conf-2.jpg");
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -409,7 +516,499 @@
 }
 
 /* Desktop version */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 992px) {
+    /* Hide mobile-version */
+    .mobile-version {
+        display: none;
+    }
 
+    /* Stylize header */
+    header {
+        width: 100%;
+        position: fixed;
+        z-index: 30;       
+    }
+
+    .top-header-links {
+        background-color: #3e3e3e;
+        margin-top: -7px;
+        padding-right: 9%;
+        width: 100%;
+        height: 36px;
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        justify-content:flex-end;
+        align-items: center;
+        list-style-type: none;
+        color: #fff;        
+    }
+    
+    .facebook,
+    .twitter {
+        color: #fff;
+    }
+
+    /* Stylize menu */
+    .default-navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;        
+        width: 100%;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.3) 0 2px 8px 0;
+    }
+
+    .menu {
+       display:flex;
+       gap: 30px;       
+       list-style-type: none;       
+    }
+
+    .menu .menu-items {
+        text-decoration: none;
+        color: #171717
+    }
+
+    .menu .menu-items:hover {
+        text-shadow: -2px 2px 2px #e55242; 
+    }
+
+    .menu .home-index,
+    .menu .about-about {
+        color: #e55242;
+    }
+
+    .campaign {
+        color: #e55242;
+        border: 2px solid #e55242;
+        padding: 2px;
+        background-color: #fff;
+        width: 129px;
+        height: 40px;
+        cursor: pointer;       
+    }
+
+    .campaign:hover {
+        background-color: #e55242;
+        color: #fff;
+        border: 2px solid rgb(121, 107, 107);
+    }
+
+    /* Stylize Introduction section in index page */
+    #Index-Introduction {
+        background-image: url("images/main_big.png");        
+    }
+
+    #About-Introduction {
+        background-image: url("images/main_big.png");        
+    }
+
+    #Index-Introduction {
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        margin-top: 7px;
+    }
+   
+    #Index-Introduction .greetings {
+        font-family: 'Lato',sans-serif;
+        font-size: 30px;
+        color: #ec5242;
+        margin: 170px 0 0 100px;         
+    }
+
+    #Index-Introduction .event-title {
+        background: url("images/h1_background.jpg") -20px -20px no-repeat;
+        font-family: 'Cocogoose',sans-serif;
+        font-size: 40px;
+        margin-top: 15px;
+        margin-left: 100px;
+        width: 650px;              
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;        
+    }
+
+    #Index-Introduction .event-description {
+        margin: 35px 0 0 100px;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        color: #272a31;
+        border: 4px white solid;
+        background-color: #f7f7f8;
+        padding: 10px;
+        width: 650px;
+      }
+
+      #Index-Introduction .event-date {
+        margin: 25px 0 0 100px;
+        font-family: 'Cocogoose', sans-serif;
+        font-size: 20px;
+        color: #575757;        
+    }
+
+    #Index-Introduction .event-place {
+        margin: 10px 0 0 100px;
+        margin-bottom: 20px;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        color: #272a31;
+        margin-bottom: 100px;
+    }
+
+    /* Stylize introduction section in about page */
+    #About-Introduction {
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 7px;
+    }
+
+    #About-Introduction .greetings {
+        font-family: 'Lato',sans-serif;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 170px;
+        color: #ec5242;          
+    }
+      
+    #About-Introduction .event-title {
+        font-family: 'Cocogoose',sans-serif;
+        text-align: center;
+        font-size: 40px;
+        width: 650px;
+        margin-top: 15px;
+        color: #ec5242;           
+    }
+
+    #About-Introduction .event-description {
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        font-size: 20px;
+        color: #272a31;
+        border: 4px #f7f7f8 solid;
+        background-color: white;
+        padding: 25px;
+        width: 850px;
+        height: 150px;
+      } 
+
+      /* Stylize main-program in index.html */
+      #main-program {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        background-image: url("images/pattern.png");            
+        background-color: #333;            
+                           
+    }
+
+    #main-program .program-title {
+        font-family: 'Lato', sans-serif;
+        padding-top: 50px;
+        color: white;
+        text-align: center;
+    }
+
+    .separator {
+        width: 53px;
+        height: 16px;
+        border-bottom: 1px solid #ef513c;
+        margin: 0 auto 54px;
+    }
+
+    .program-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;           
+        gap: 10px;
+        margin: -20px 100px 100px 100px;
+    }
+
+    .program-list li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
+        list-style-type: none;
+        height: 270px; 
+        width: 180px;       
+    }
+
+    .program-list li:hover {
+        border: 2px solid #fff;
+    }
+
+    .program-list .icon {
+        margin-top: 5px;
+        width: 64px;
+        height: 58px;            
+    }
+
+    .program-list .subtitle {
+        font-family: 'Cocogoose', sans-serif;
+        font-size: 18px;
+        color:#ef513c;                            
+    }
+
+    .program-list .description {
+        font-family: 'Lato', sans-serif;
+        color: white;
+        font-size: 18px;
+        text-align: center;                                                
+    }
+
+    #main-program .whole-program {
+        color: white;
+        font-family: 'Cocogoose', sans-serif;
+        height: 80px;
+        margin: 40px 0 40px 0;
+        cursor: pointer;
+        text-decoration: underline;          
+    }
+
+        /* Stylize list of speakers in index.html */
+        #Speakers {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 50px 100px 0 100px;
+        }
+
+        #Speakers .featured-speakers {
+           font-family: 'Lato', sans-serif;
+           font-weight: bolder;
+        }
+
+        #Speakers .speakerslist {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+            margin-top: -20px;            
+        }
+
+        #Speakers .speaker-item {
+            display: flex;
+            gap: 10px;            
+        }
+
+        #Speakers .speaker-picture {
+            width: 178px;
+            height: 177px;
+        }
+
+        #Speakers .speaker-name {
+            font-family: 'Cocogoose', sans-serif;
+            color: #3f3333;
+            font-size: 20px;
+            width: 250px;
+        }
+
+        #Speakers .speaker-title {
+            margin-top: 10px;
+            font-family: 'Lato', sans-serif;
+            color:#ef513c;
+            width: 250px;
+            font-size: 18px;
+        }
+
+        .hrline {
+            margin-top: 15px;
+            width: 10%;
+            height: 1px;
+        }
+
+        #Speakers .speaker-achievement {
+            margin-top: 10px;
+            font-family: 'Lato', sans-serif;
+            color: #3f3333;
+            font-size: 18px;
+            width: 250px;
+        }
+
+        /* Stylize partners */
+        #Partner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #333;
+            margin-top: 50px;
+        }
+
+        #Partner .Partner-title {
+            font-family: 'Lato', sans-serif;
+            font-weight: bolder;
+            color: white;
+            padding-top: 50px;            
+         }
+
+         #Partner .Partner-list {
+             display: flex;
+             flex-direction: row;
+             align-items: center;
+             justify-content: center;
+             flex-wrap: wrap;
+             gap: 10px;
+             list-style-type: none;
+             list-style-position: outside;
+             margin: -20px 0 50px 0;             
+         }
+
+         #Partner .Partner-list-item {
+            width: 200px;
+            height: auto;            
+        }
+
+        #footer {
+            margin: 50px 0 50px 0;
+            display: flex;
+            gap: 100px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #footer .commons-creative-logo {
+            width: 15%
+        }
+
+        #footer .copyright {
+            width: 35%;
+            font-family: 'Lato', sans-serif;
+            font-size: 18px;
+        }
+
+         /* Stylize other parts of about.html */
+         .contact-us {
+            margin-top: 30px;
+            margin-bottom: 90px;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            font-size: 18px;
+        }
+
+        .email {
+          display: block;
+          color: #3c3f46;
+          font-weight: bold;
+          text-decoration: underline;
+          margin-top: 5px;
+        }
+
+        #ccgs2015-logo {
+            margin: 80px 16px 0 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ccgs2015-logo-title {
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            color: #272a31;
+            text-align: center;
+        }
+        .ccgs2015-logo-description {
+            margin-top: -30px;
+            font-family: 'Lato', sans-serif;
+            text-align: center;
+            width: 850px;
+            font-size: 20px;
+            color: #272a31; 
+        }
+
+        .img-logo {
+            margin-top: 40px;
+            width: 25%;
+            border: thin solid #d3d3d3
+        }
+
+        #Past-ccgs {
+            margin: 120px 16px 0 16px;
+            border-top: thin solid #d3d3d3;
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Past-ccgs-title {
+            font-family: 'Lato', sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            color: #272a31;
+            text-align: center;
+        }
+
+        .Past-ccgs-description {
+            margin-top: -35px;
+            font-family: 'Lato', sans-serif;
+            text-align: center;
+            font-size: 20px;
+            color: #272a31; 
+        }
+
+        .past-summit {
+            width: 60%;
+            display: flex;
+            gap: 30px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ccgs2013 {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 200px;
+            background-image: url("images/Conf-1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .ccgs2011 {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 200px;
+            background-image: url("images/Conf-2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .ccgs2013 h2,
+        .ccgs2011 h2 {
+            font-family: 'Cocogoose', sans-serif;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .ccgs2013 p,
+        .ccgs2011 p {
+            font-family: 'Lato', sans-serif;
+            font-weight: bold;
+            color: white;
+            font-size: 15px;
+            text-align: center; 
+        }
 }
   
