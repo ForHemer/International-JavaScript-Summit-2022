@@ -1,34 +1,34 @@
 /* Import Cocogoose and Lato fonts */
 @font-face {
-    font-family: 'Cocogoose';
-    src: url("fonts/Cocogoose/Cocogoose Pro Italic-trial.ttf");
-  }
-  
-  @font-face {
-    font-family: 'Lato';
-    src: url("fonts/Lato/Lato-Regular.woff");
-  }
-  
-  /* All viewports */
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: 'Cocogoose';
+  src: url("fonts/Cocogoose/Cocogoose Pro Italic-trial.ttf");
+}
 
-  /* Mobile version */
+@font-face {
+  font-family: 'Lato';
+  src: url("fonts/Lato/Lato-Regular.woff");
+}
+
+/* All viewports */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile version */
 @media only screen and (max-width: 991px) {
-    /* Stylize mobile menu */
-    .default-navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #818ca3fa;
-        height: 650px;
-        position: relative;
-        width: 100%;
-        z-index: 300;        
-    }   
+  /* Stylize mobile menu */
+  .default-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #818ca3fa;
+    height: 650px;
+    position: relative;
+    width: 100%;
+    z-index: 300;
+  }
 
   .menu {
     display: flex;
@@ -38,10 +38,10 @@
     padding-top: 50px;
     background-color: #1e222b;
     position: fixed;
-    height: 650px;
+    height: 100vh;
     width: 100%;
     z-index: 30;
-  }  
+  }
 
   .menu-items {
     text-decoration: none;
@@ -53,6 +53,7 @@
     font-weight: 400;
     line-height: 48px;
     transition: font-size 700ms ease-in-out;
+
     /* border-top: 1px solid #e55242; */
     width: 100%;
   }
@@ -62,953 +63,941 @@
     text-decoration: underline;
   }
 
-    /* Stylize main */
-    .main-index {
-        background-image: url("images/mobile_intro_bg.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+  /* Stylize main */
+  .main-index {
+    background-image: url("images/mobile_intro_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-    .main-about {
-        background-image: url("images/mobile_intro_bg.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+  .main-about {
+    background-image: url("images/mobile_intro_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-    /* Stylize Header */
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;        
-    }
+  /* Stylize Header */
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    /* Hide top-header container, logo-container, menu, campaign button */
-     .top-header,
-    .btn-close,
-    .desktop-version,
-    .logo-container,
-    .default-navbar,
-    .campaign,
-    .whole-program {
-      display: none;
-    } 
+  /* Hide top-header container, logo-container, menu, campaign button */
+  .top-header,
+  .btn-close,
+  .desktop-version,
+  .logo-container,
+  .default-navbar,
+  .campaign,
+  .whole-program {
+    display: none;
+  }
 
-    .btn-close {
-        font-size: 25px;
-        position: absolute;
-        right: 17px;
-        top: 13px;
-      }
-    
-      .btn-close:active {
-        font-size: 30px;
-      }
+  .btn-close {
+    font-size: 25px;
+    position: absolute;
+    right: 17px;
+    top: 13px;
+  }
 
-    /* Stylize hamburger button */
-    .btn-hamburger-menu {
-        position: fixed;
-        margin-top: 59px;
-        margin-left: 16px;
-        left: 0;
-        cursor: pointer;
-        width: 50%;        
-        z-index: 300;
-      }
-      
-      .btn-hamburger-menu:active {
-        width: 80%;
-      }
+  .btn-close:active {
+    font-size: 30px;
+  }
 
-      /* Stylize Introduction section in index page*/
-      #Index-Introduction {
-          display: flex;
-          flex-direction: column;
-          margin-left: 16px;
-          margin: 100px 16px 0 16px;
-          height: 450px;
-      }
+  /* Stylize hamburger button */
+  .btn-hamburger-menu {
+    position: fixed;
+    margin-top: 59px;
+    margin-left: 16px;
+    left: 0;
+    cursor: pointer;
+    width: 50%;
+    z-index: 300;
+  }
 
-      #Index-Introduction .greetings {
-          font-family: '',sans-serif;
-          font-size: 23px;
-          color: #ec5242;          
-      }
+  .btn-hamburger-menu:active {
+    width: 80%;
+  }
 
-      #Index-Introduction .event-title {
-          background: url("images/h1_background.jpg") -20px -20px no-repeat;
-          font-family: 'Cocogoose',sans-serif;
-          font-size: 33px;
-          margin-top: 15px;        
-          -webkit-text-fill-color: transparent;
-          -webkit-background-clip: text;
-          width: 100%;
-      }
+  /* Stylize Introduction section in index page */
+  #Index-Introduction {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 16px 0 16px;
+    height: 450px;
+  }
 
-      #Index-Introduction .event-description {
-          margin-top: 35px;
-          font-family: 'Lato', sans-serif;
-          /* text-align: justify; */
-          font-size: 18px;
-          color: #272a31;
-          border: 4px white solid;
-          background-color: #f7f7f8;
-          padding: 10px;
-        }
+  #Index-Introduction .greetings {
+    font-family: '', sans-serif;
+    font-size: 23px;
+    color: #ec5242;
+  }
 
-        #Index-Introduction .event-date {
-            margin-top: 25px;
-            font-family: 'Cocogoose', sans-serif;
-            font-size: 20px;
-            color: #575757;
+  #Index-Introduction .event-title {
+    background: url("images/h1_background.jpg") -20px -20px no-repeat;
+    font-family: 'Cocogoose', sans-serif;
+    font-size: 33px;
+    margin-top: 15px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    width: 100%;
+  }
 
-        }
+  #Index-Introduction .event-description {
+    margin-top: 35px;
+    font-family: 'Lato', sans-serif;
 
-        #Index-Introduction .event-place {
-            margin-top: 10px;
-            margin-bottom: 20px;
-            font-family: 'Lato', sans-serif;
-            font-size: 18px;
-            color: #272a31;
-        }
+    /* text-align: justify; */
+    font-size: 18px;
+    color: #272a31;
+    border: 4px white solid;
+    background-color: #f7f7f8;
+    padding: 10px;
+  }
 
-        /* Stylize introduction section in about page */
-        #About-Introduction {
-            display: flex;
-            flex-direction: column;
-            margin-left: 16px;
-            margin: 90px 16px 0 16px;
-            height: 520px;
-        }
-  
-        #About-Introduction .greetings {
-            font-family: 'Lato',sans-serif;
-            font-size: 23px;
-            text-align: center;
-            margin-top: 40px;
-            color: #ec5242;          
-        }
-  
-        #About-Introduction .event-title {
-            font-family: 'Cocogoose',sans-serif;
-            text-align: center;
-            font-size: 33px;
-            margin-top: 15px;
-            color: #ec5242;           
-        }
-  
-        #About-Introduction .event-description {
-            margin-top: 35px;
-            font-family: 'Lato', sans-serif;
-            text-align: center;
-            font-size: 18px;
-            color: #272a31;
-            border: 4px #f7f7f8 solid;
-            background-color: white;
-            padding: 10px;
-          }
+  #Index-Introduction .event-date {
+    margin-top: 25px;
+    font-family: 'Cocogoose', sans-serif;
+    font-size: 20px;
+    color: #575757;
+  }
 
-        /* Stylize main-program in index.html */
-        #main-program {
-            display: flex;
-            flex-direction: column; 
-            justify-content: center;
-            align-items: center;
-            background-image: url("images/pattern.png");            
-            background-color: #333;            
-                               
-        }
+  #Index-Introduction .event-place {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #272a31;
+  }
 
-        #main-program .program-title {
-            font-family: 'Lato', sans-serif;
-            padding-top: 50px;
-            color: white;
-            text-align: center;
-        }
+  /* Stylize introduction section in about page */
+  #About-Introduction {
+    display: flex;
+    flex-direction: column;
+    margin: 90px 16px 0 16px;
+    height: 520px;
+  }
 
-        .separator {
-            width: 53px;
-            height: 16px;
-            border-bottom: 1px solid #ef513c;
-            margin: 0 auto 54px;
-        }
+  #About-Introduction .greetings {
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    text-align: center;
+    margin-top: 40px;
+    color: #ec5242;
+  }
 
-        .program-list {
-            display: flex;
-            flex-direction: column;           
-            gap: 15px;
-        }
+  #About-Introduction .event-title {
+    font-family: 'Cocogoose', sans-serif;
+    text-align: center;
+    font-size: 33px;
+    margin-top: 15px;
+    color: #ec5242;
+  }
 
-        .program-list li {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
-            list-style-type: none;
-            margin-left: 16px;
-            margin-right: 16px;
-            height: 110px;
-            
-        }
+  #About-Introduction .event-description {
+    margin-top: 35px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: #272a31;
+    border: 4px #f7f7f8 solid;
+    background-color: white;
+    padding: 10px;
+  }
 
-        .program-list .icon {
-            width: 64px;
-            height: 58px;            
-        }
+  /* Stylize main-program in index.html */
+  #main-program {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/pattern.png");
+    background-color: #333;
+  }
 
-        .program-list .subtitle {
-            font-family: 'Cocogoose', sans-serif;
-            font-size: 16px;
-            color:#ef513c;
-            width: 25%;                     
-        }
+  #main-program .program-title {
+    font-family: 'Lato', sans-serif;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+  }
 
-        .program-list .description {
-            font-family: 'Lato', sans-serif;
-            color: white;
-            font-size: 16px;
-            width: 55%;                                         
-        }
+  .separator {
+    width: 53px;
+    height: 16px;
+    border-bottom: 1px solid #ef513c;
+    margin: 0 auto 54px;
+  }
 
-        #main-program .btn_join-program {
-            margin-top: 50px;
-            background-color: #e55242;
-            color: white;
-            font-family: 'Cocogoose', sans-serif;
-            width: 300px;
-            height: 80px;
-            margin: 40px 0 40px 0;
-            cursor: pointer;
-            border-style: none;           
-        }
+  .program-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
 
-        /* Stylize list of speakers in index.html */
-        #Speakers {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 50px 16px 0 16px;
-        }
+  .program-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
+    list-style-type: none;
+    margin-left: 16px;
+    margin-right: 16px;
+    height: 110px;
+  }
 
-        #Speakers .featured-speakers {
-           font-family: 'Lato', sans-serif;
-           font-weight: bolder;
-        }
+  .program-list .icon {
+    width: 64px;
+    height: 58px;
+  }
 
-        #Speakers .speakerslist {
-            display: flex;
-            gap: 35px;
-            flex-direction: column;
-            margin-top: -20px;            
-        }
+  .program-list .subtitle {
+    font-family: 'Cocogoose', sans-serif;
+    font-size: 16px;
+    color: #ef513c;
+    width: 25%;
+  }
 
-        #Speakers .speaker-item {
-            display: flex;
-            gap: 10px;            
-        }
+  .program-list .description {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 16px;
+    width: 55%;
+  }
 
-        #Speakers .speaker-picture {
-            width: 178px;
-            height: 177px;
-        }
+  #main-program .btn_join-program {
+    background-color: #e55242;
+    color: white;
+    font-family: 'Cocogoose', sans-serif;
+    width: 300px;
+    height: 80px;
+    margin: 40px 0 40px 0;
+    cursor: pointer;
+    border-style: none;
+  }
 
-        #Speakers .speaker-name {
-            font-family: 'Cocogoose', sans-serif;
-            color: #3f3333;
-            font-size: 18px;
-        }
+  /* Stylize list of speakers in index.html */
+  #Speakers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 16px 0 16px;
+  }
 
-        #Speakers .speaker-title {
-            margin-top: 10px;
-            font-family: 'Lato', sans-serif;
-            color:#ef513c;
-            font-size: 16px;
-        }
+  #Speakers .featured-speakers {
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+  }
 
-        .hrline {
-            margin-top: 15px;
-            width: 10%;
-            height: 1px;
-        }
+  #Speakers .speakerslist {
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+    margin-top: -20px;
+  }
 
-        #Speakers .speaker-achievement {
-            margin-top: 10px;
-            font-family: 'Lato', sans-serif;
-            color: #3f3333;
-            font-size: 14px;
-        }
+  #Speakers .speaker-item {
+    display: flex;
+    gap: 10px;
+  }
+
+  #Speakers .speaker-picture {
+    width: 178px;
+    height: 177px;
+  }
+
+  #Speakers .speaker-name {
+    font-family: 'Cocogoose', sans-serif;
+    color: #3f3333;
+    font-size: 18px;
+  }
+
+  #Speakers .speaker-title {
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    color: #ef513c;
+    font-size: 16px;
+  }
+
+  .hrline {
+    margin-top: 15px;
+    width: 10%;
+    height: 1px;
+  }
+
+  #Speakers .speaker-achievement {
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    color: #3f3333;
+    font-size: 14px;
+  }
 
 
-        /* Stylize partners in index.html */
-        #Partner {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #333;
-            margin-top: 50px;            
-        }
+  /* Stylize partners in index.html */
+  #Partner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    margin-top: 50px;
+  }
 
-        #Partner .Partner-title {
-            font-family: 'Lato', sans-serif;
-            font-size: 20px;
-            font-weight: bolder;
-            color: white;
-            padding-top: 50px;            
-         }
+  #Partner .Partner-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    padding-top: 50px;
+  }
 
-         #Partner .Partner-list {
-             display: flex;
-             flex-direction: row;
-             align-items: center;
-             justify-content: center;
-             flex-wrap: wrap;
-             gap: 10px;
-             list-style-type: none;
-             list-style-position: outside;
-             margin: -20px 0 50px 0;           
-         }
+  #Partner .Partner-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: -20px 0 50px 0;
+  }
 
-         #Partner .Partner-list-item {
-            width: 120px;
-            height: auto;            
-        }
+  #Partner .Partner-list-item {
+    width: 120px;
+    height: auto;
+  }
 
-        #footer {
-            margin: 50px 0 50px 0;
-            display: flex;
-            gap: 30px;
-            align-items: center;
-            justify-content: center;
-        }
+  #footer {
+    margin: 50px 0 50px 0;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
 
-        #footer .commons-creative-logo {
-            width: 40%
-        }
+  #footer .commons-creative-logo {
+    width: 40%;
+  }
 
-        #footer .copyright {
-            width: 40%;
-            font-family: 'Lato', sans-serif;
-            font-size: 15px;
-        }
+  #footer .copyright {
+    width: 40%;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+  }
 
-        /* Stylize other parts of about.html */
-        .contact-us {
-            margin-top: 30px;
-            margin-bottom: 20px;
-            text-align: center;
-            font-family: 'Lato', sans-serif;
-            font-size: 15px;
-        }
+  /* Stylize other parts of about.html */
+  .contact-us {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+  }
 
-        .email {
-          display: block;
-          color: #3c3f46;
-          font-weight: bold;
-          text-decoration: underline;
-          margin-top: 5px;
-        }
+  .email {
+    display: block;
+    color: #3c3f46;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 5px;
+  }
 
-        #ccgs2015-logo {
-            margin: 120px 16px 0 16px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
+  #ccgs2015-logo {
+    margin: 120px 16px 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-        .ccgs2015-logo-title {
-            font-family: 'Lato', sans-serif;
-            font-weight: bold;
-            color: #272a31;
-            text-align: center;
-        }
-        .ccgs2015-logo-description {
-            margin-top: -30px;
-            font-family: 'Lato', sans-serif;
-            text-align: center;
-            font-size: 16px;
-            color: #272a31; 
-        }
+  .ccgs2015-logo-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #272a31;
+    text-align: center;
+  }
 
-        .img-logo {
-            margin-top: 40px;
-            width: 90%;
-            border: thin solid #d3d3d3
-        }
+  .ccgs2015-logo-description {
+    margin-top: -30px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    color: #272a31;
+  }
 
-        #Past-ccgs {
-            margin: 60px 16px 0 16px;
-            border-top: thin solid #d3d3d3;
-            padding-top: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+  .img-logo {
+    margin-top: 40px;
+    width: 90%;
+    border: thin solid #d3d3d3;
+  }
 
-        .Past-ccgs-title {
-            font-family: 'Lato', sans-serif;
-            font-size: 23px;
-            font-weight: bold;
-            color: #272a31;
-            text-align: center;
-        }
+  #Past-ccgs {
+    margin: 60px 16px 0 16px;
+    border-top: thin solid #d3d3d3;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-        .Past-ccgs-description {
-            margin-top: -35px;
-            font-family: 'Lato', sans-serif;
-            text-align: center;
-            font-size: 14px;
-            color: #272a31; 
-        }
+  .Past-ccgs-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    color: #272a31;
+    text-align: center;
+  }
 
-        .past-summit {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
+  .Past-ccgs-description {
+    margin-top: -35px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    color: #272a31;
+  }
 
-        .ccgs2013 {
-            margin-top: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 200px;
-            background-image: url("images/Conf-1.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+  .past-summit {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-        .ccgs2011 {
-            margin-top: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 200px;
-            background-image: url("images/Conf-2.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+  .ccgs2013 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-image: url("images/Conf-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-        .ccgs2013 h2,
-        .ccgs2011 h2 {
-            font-family: 'Cocogoose', sans-serif;
-            color: white;
-            font-weight: bold;
-            font-size: 30px;
-            text-align: center;
-        }
+  .ccgs2011 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-image: url("images/Conf-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-        .ccgs2013 p,
-        .ccgs2011 p {
-            font-family: 'Lato', sans-serif;
-            font-weight: bold;
-            color: white;
-            font-size: 15px;
-            text-align: center; 
-        }
+  .ccgs2013 h2,
+  .ccgs2011 h2 {
+    font-family: 'Cocogoose', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .ccgs2013 p,
+  .ccgs2011 p {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+  }
 }
 
 /* Desktop version */
 @media only screen and (min-width: 992px) {
-    /* Hide mobile-version */
-    .mobile-version {
-        display: none;
-    }
+  /* Hide mobile-version */
+  .mobile-version {
+    display: none;
+  }
 
-    /* Stylize header */
-    header {
-        width: 100%;
-        position: fixed;
-        z-index: 30;       
-    }
+  /* Stylize header */
+  header {
+    width: 100%;
+    position: fixed;
+    z-index: 30;
+  }
 
-    .top-header-links {
-        background-color: #3e3e3e;
-        margin-top: -7px;
-        padding-right: 9%;
-        width: 100%;
-        height: 36px;
-        display: flex;
-        gap: 20px;
-        flex-direction: row;
-        justify-content:flex-end;
-        align-items: center;
-        list-style-type: none;
-        color: #fff;        
-    }
-    
-    .facebook,
-    .twitter {
-        color: #fff;
-    }
+  .top-header-links {
+    background-color: #3e3e3e;
+    margin-top: -7px;
+    padding-right: 9%;
+    width: 100%;
+    height: 36px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    color: #fff;
+  }
 
-    /* Stylize menu */
-    .default-navbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;        
-        width: 100%;
-        background-color: #fff;
-        box-shadow: rgba(0, 0, 0, 0.3) 0 2px 8px 0;
-    }
+  .facebook,
+  .twitter {
+    color: #fff;
+  }
 
-    .menu {
-       display:flex;
-       gap: 30px;       
-       list-style-type: none;       
-    }
+  /* Stylize menu */
+  .default-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 2px 8px 0;
+  }
 
-    .menu .menu-items {
-        text-decoration: none;
-        color: #171717
-    }
+  .menu {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+  }
 
-    .menu .menu-items:hover {
-        text-shadow: -2px 2px 2px #e55242; 
-    }
+  .menu .menu-items {
+    text-decoration: none;
+    color: #171717;
+  }
 
-    .menu .home-index,
-    .menu .about-about {
-        color: #e55242;
-    }
+  .menu .menu-items:hover {
+    text-shadow: -2px 2px 2px #e55242;
+  }
 
-    .campaign {
-        color: #e55242;
-        border: 2px solid #e55242;
-        padding: 2px;
-        background-color: #fff;
-        width: 129px;
-        height: 40px;
-        cursor: pointer;       
-    }
+  .menu .home-index,
+  .menu .about-about {
+    color: #e55242;
+  }
 
-    .campaign:hover {
-        background-color: #e55242;
-        color: #fff;
-        border: 2px solid rgb(121, 107, 107);
-    }
+  .campaign {
+    color: #e55242;
+    border: 2px solid #e55242;
+    padding: 2px;
+    background-color: #fff;
+    width: 129px;
+    height: 40px;
+    cursor: pointer;
+  }
 
-    /* Stylize Introduction section in index page */
-    #Index-Introduction {
-        background-image: url("images/main_big.png");        
-    }
+  .campaign:hover {
+    background-color: #e55242;
+    color: #fff;
+    border: 2px solid rgb(121, 107, 107);
+  }
 
-    #About-Introduction {
-        background-image: url("images/main_big.png");        
-    }
+  /* Stylize Introduction section in index page */
+  #Index-Introduction {
+    background-image: url("images/main_big.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-top: 7px;
+  }
 
-    #Index-Introduction {
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        margin-top: 7px;
-    }
-   
-    #Index-Introduction .greetings {
-        font-family: 'Lato',sans-serif;
-        font-size: 30px;
-        color: #ec5242;
-        margin: 170px 0 0 100px;         
-    }
+  #Index-Introduction .greetings {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    color: #ec5242;
+    margin: 170px 0 0 100px;
+  }
 
-    #Index-Introduction .event-title {
-        background: url("images/h1_background.jpg") -20px -20px no-repeat;
-        font-family: 'Cocogoose',sans-serif;
-        font-size: 40px;
-        margin-top: 15px;
-        margin-left: 100px;
-        width: 650px;              
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;        
-    }
+  #Index-Introduction .event-title {
+    background: url("images/h1_background.jpg") -20px -20px no-repeat;
+    font-family: 'Cocogoose', sans-serif;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-left: 100px;
+    width: 650px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
 
-    #Index-Introduction .event-description {
-        margin: 35px 0 0 100px;
-        font-family: 'Lato', sans-serif;
-        font-size: 20px;
-        color: #272a31;
-        border: 4px white solid;
-        background-color: #f7f7f8;
-        padding: 10px;
-        width: 650px;
-      }
+  #Index-Introduction .event-description {
+    margin: 35px 0 0 100px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #272a31;
+    border: 4px white solid;
+    background-color: #f7f7f8;
+    padding: 10px;
+    width: 650px;
+  }
 
-      #Index-Introduction .event-date {
-        margin: 25px 0 0 100px;
-        font-family: 'Cocogoose', sans-serif;
-        font-size: 20px;
-        color: #575757;        
-    }
+  #Index-Introduction .event-date {
+    margin: 25px 0 0 100px;
+    font-family: 'Cocogoose', sans-serif;
+    font-size: 20px;
+    color: #575757;
+  }
 
-    #Index-Introduction .event-place {
-        margin: 10px 0 0 100px;
-        margin-bottom: 20px;
-        font-family: 'Lato', sans-serif;
-        font-size: 20px;
-        color: #272a31;
-        margin-bottom: 100px;
-    }
+  #Index-Introduction .event-place {
+    margin: 10px 0 0 100px;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #272a31;
+  }
 
-    /* Stylize introduction section in about page */
-    #About-Introduction {
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 7px;
-    }
+  /* Stylize introduction section in about page */
+  #About-Introduction {
+    background-image: url("images/main_big.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7px;
+  }
 
-    #About-Introduction .greetings {
-        font-family: 'Lato',sans-serif;
-        font-size: 30px;
-        text-align: center;
-        margin-top: 170px;
-        color: #ec5242;          
-    }
-      
-    #About-Introduction .event-title {
-        font-family: 'Cocogoose',sans-serif;
-        text-align: center;
-        font-size: 40px;
-        width: 650px;
-        margin-top: 15px;
-        color: #ec5242;           
-    }
+  #About-Introduction .greetings {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 170px;
+    color: #ec5242;
+  }
 
-    #About-Introduction .event-description {
-        font-family: 'Lato', sans-serif;
-        text-align: center;
-        font-size: 20px;
-        color: #272a31;
-        border: 4px #f7f7f8 solid;
-        background-color: white;
-        padding: 25px;
-        width: 850px;
-        height: 150px;
-      } 
+  #About-Introduction .event-title {
+    font-family: 'Cocogoose', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    width: 650px;
+    margin-top: 15px;
+    color: #ec5242;
+  }
 
-      /* Stylize main-program in index.html */
-      #main-program {
-        display: flex;
-        flex-direction: column; 
-        justify-content: center;
-        align-items: center;
-        background-image: url("images/pattern.png");            
-        background-color: #333;            
-                           
-    }
+  #About-Introduction .event-description {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: #272a31;
+    border: 4px #f7f7f8 solid;
+    background-color: white;
+    padding: 25px;
+    width: 850px;
+    height: 150px;
+  }
 
-    #main-program .program-title {
-        font-family: 'Lato', sans-serif;
-        padding-top: 50px;
-        color: white;
-        text-align: center;
-    }
+  /* Stylize main-program in index.html */
+  #main-program {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/pattern.png");
+    background-color: #333;
+  }
 
-    .separator {
-        width: 53px;
-        height: 16px;
-        border-bottom: 1px solid #ef513c;
-        margin: 0 auto 54px;
-    }
+  #main-program .program-title {
+    font-family: 'Lato', sans-serif;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+  }
 
-    .program-list {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;           
-        gap: 10px;
-        margin: -20px 100px 100px 100px;
-    }
+  .separator {
+    width: 53px;
+    height: 16px;
+    border-bottom: 1px solid #ef513c;
+    margin: 0 auto 54px;
+  }
 
-    .program-list li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 12px;
-        background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
-        list-style-type: none;
-        height: 270px; 
-        width: 180px;       
-    }
+  .program-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: -20px 100px 100px 100px;
+  }
 
-    .program-list li:hover {
-        border: 2px solid #fff;
-    }
+  .program-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.1) none repeat scroll 0 0;
+    list-style-type: none;
+    height: 270px;
+    width: 180px;
+  }
 
-    .program-list .icon {
-        margin-top: 5px;
-        width: 64px;
-        height: 58px;            
-    }
+  .program-list li:hover {
+    border: 2px solid #fff;
+  }
 
-    .program-list .subtitle {
-        font-family: 'Cocogoose', sans-serif;
-        font-size: 18px;
-        color:#ef513c;                            
-    }
+  .program-list .icon {
+    margin-top: 5px;
+    width: 64px;
+    height: 58px;
+  }
 
-    .program-list .description {
-        font-family: 'Lato', sans-serif;
-        color: white;
-        font-size: 18px;
-        text-align: center;                                                
-    }
+  .program-list .subtitle {
+    font-family: 'Cocogoose', sans-serif;
+    font-size: 18px;
+    color: #ef513c;
+  }
 
-    #main-program .whole-program {
-        color: white;
-        font-family: 'Cocogoose', sans-serif;
-        height: 80px;
-        margin: 40px 0 40px 0;
-        cursor: pointer;
-        text-decoration: underline;          
-    }
+  .program-list .description {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+  }
 
-        /* Stylize list of speakers in index.html */
-        #Speakers {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 50px 100px 0 100px;
-        }
+  #main-program .whole-program {
+    color: white;
+    font-family: 'Cocogoose', sans-serif;
+    height: 80px;
+    margin: 40px 0 40px 0;
+    cursor: pointer;
+    text-decoration: underline;
+  }
 
-        #Speakers .featured-speakers {
-           font-family: 'Lato', sans-serif;
-           font-weight: bolder;
-        }
+  /* Stylize list of speakers in index.html */
+  #Speakers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 100px 0 100px;
+  }
 
-        #Speakers .speakerslist {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 35px;
-            margin-top: -20px;            
-        }
+  #Speakers .featured-speakers {
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+  }
 
-        #Speakers .speaker-item {
-            display: flex;
-            gap: 10px;            
-        }
+  #Speakers .speakerslist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    margin-top: -20px;
+  }
 
-        #Speakers .speaker-picture {
-            width: 178px;
-            height: 177px;
-        }
+  #Speakers .speaker-item {
+    display: flex;
+    gap: 10px;
+  }
 
-        #Speakers .speaker-name {
-            font-family: 'Cocogoose', sans-serif;
-            color: #3f3333;
-            font-size: 20px;
-            width: 250px;
-        }
+  #Speakers .speaker-picture {
+    width: 178px;
+    height: 177px;
+  }
 
-        #Speakers .speaker-title {
-            margin-top: 10px;
-            font-family: 'Lato', sans-serif;
-            color:#ef513c;
-            width: 250px;
-            font-size: 18px;
-        }
+  #Speakers .speaker-name {
+    font-family: 'Cocogoose', sans-serif;
+    color: #3f3333;
+    font-size: 20px;
+    width: 250px;
+  }
 
-        .hrline {
-            margin-top: 15px;
-            width: 10%;
-            height: 1px;
-        }
+  #Speakers .speaker-title {
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    color: #ef513c;
+    width: 250px;
+    font-size: 18px;
+  }
 
-        #Speakers .speaker-achievement {
-            margin-top: 10px;
-            font-family: 'Lato', sans-serif;
-            color: #3f3333;
-            font-size: 18px;
-            width: 250px;
-        }
+  .hrline {
+    margin-top: 15px;
+    width: 10%;
+    height: 1px;
+  }
 
-        /* Stylize partners */
-        #Partner {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #333;
-            margin-top: 50px;
-        }
+  #Speakers .speaker-achievement {
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+    color: #3f3333;
+    font-size: 18px;
+    width: 250px;
+  }
 
-        #Partner .Partner-title {
-            font-family: 'Lato', sans-serif;
-            font-weight: bolder;
-            color: white;
-            padding-top: 50px;            
-         }
+  /* Stylize partners */
+  #Partner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    margin-top: 50px;
+  }
 
-         #Partner .Partner-list {
-             display: flex;
-             flex-direction: row;
-             align-items: center;
-             justify-content: center;
-             flex-wrap: wrap;
-             gap: 10px;
-             list-style-type: none;
-             list-style-position: outside;
-             margin: -20px 0 50px 0;             
-         }
+  #Partner .Partner-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    color: white;
+    padding-top: 50px;
+  }
 
-         #Partner .Partner-list-item {
-            width: 200px;
-            height: auto;            
-        }
+  #Partner .Partner-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: -20px 0 50px 0;
+  }
 
-        #footer {
-            margin: 50px 0 50px 0;
-            display: flex;
-            gap: 100px;
-            align-items: center;
-            justify-content: center;
-        }
+  #Partner .Partner-list-item {
+    width: 200px;
+    height: auto;
+  }
 
-        #footer .commons-creative-logo {
-            width: 15%
-        }
+  #footer {
+    margin: 50px 0 50px 0;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+  }
 
-        #footer .copyright {
-            width: 35%;
-            font-family: 'Lato', sans-serif;
-            font-size: 18px;
-        }
+  #footer .commons-creative-logo {
+    width: 15%;
+  }
 
-         /* Stylize other parts of about.html */
-         .contact-us {
-            margin-top: 30px;
-            margin-bottom: 90px;
-            text-align: center;
-            font-family: 'Lato', sans-serif;
-            font-size: 18px;
-        }
+  #footer .copyright {
+    width: 35%;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+  }
 
-        .email {
-          display: block;
-          color: #3c3f46;
-          font-weight: bold;
-          text-decoration: underline;
-          margin-top: 5px;
-        }
+  /* Stylize other parts of about.html */
+  .contact-us {
+    margin-top: 30px;
+    margin-bottom: 90px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+  }
 
-        #ccgs2015-logo {
-            margin: 80px 16px 0 16px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
+  .email {
+    display: block;
+    color: #3c3f46;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 5px;
+  }
 
-        .ccgs2015-logo-title {
-            font-family: 'Lato', sans-serif;
-            font-weight: bold;
-            color: #272a31;
-            text-align: center;
-        }
-        .ccgs2015-logo-description {
-            margin-top: -30px;
-            font-family: 'Lato', sans-serif;
-            text-align: center;
-            width: 850px;
-            font-size: 20px;
-            color: #272a31; 
-        }
+  #ccgs2015-logo {
+    margin: 80px 16px 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-        .img-logo {
-            margin-top: 40px;
-            width: 25%;
-            border: thin solid #d3d3d3
-        }
+  .ccgs2015-logo-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: #272a31;
+    text-align: center;
+  }
 
-        #Past-ccgs {
-            margin: 120px 16px 0 16px;
-            border-top: thin solid #d3d3d3;
-            padding-top: 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+  .ccgs2015-logo-description {
+    margin-top: -30px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    width: 850px;
+    font-size: 20px;
+    color: #272a31;
+  }
 
-        .Past-ccgs-title {
-            font-family: 'Lato', sans-serif;
-            font-size: 30px;
-            font-weight: bold;
-            color: #272a31;
-            text-align: center;
-        }
+  .img-logo {
+    margin-top: 40px;
+    width: 25%;
+    border: thin solid #d3d3d3;
+  }
 
-        .Past-ccgs-description {
-            margin-top: -35px;
-            font-family: 'Lato', sans-serif;
-            text-align: center;
-            font-size: 20px;
-            color: #272a31; 
-        }
+  #Past-ccgs {
+    margin: 120px 16px 0 16px;
+    border-top: thin solid #d3d3d3;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-        .past-summit {
-            width: 60%;
-            display: flex;
-            gap: 30px;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-        }
+  .Past-ccgs-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #272a31;
+    text-align: center;
+  }
 
-        .ccgs2013 {
-            margin-top: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 200px;
-            background-image: url("images/Conf-1.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+  .Past-ccgs-description {
+    margin-top: -35px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: #272a31;
+  }
 
-        .ccgs2011 {
-            margin-top: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 200px;
-            background-image: url("images/Conf-2.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+  .past-summit {
+    width: 60%;
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 
-        .ccgs2013 h2,
-        .ccgs2011 h2 {
-            font-family: 'Cocogoose', sans-serif;
-            color: white;
-            font-weight: bold;
-            font-size: 30px;
-            text-align: center;
-        }
+  .ccgs2013 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-image: url("images/Conf-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-        .ccgs2013 p,
-        .ccgs2011 p {
-            font-family: 'Lato', sans-serif;
-            font-weight: bold;
-            color: white;
-            font-size: 15px;
-            text-align: center; 
-        }
+  .ccgs2011 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-image: url("images/Conf-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .ccgs2013 h2,
+  .ccgs2011 h2 {
+    font-family: 'Cocogoose', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .ccgs2013 p,
+  .ccgs2011 p {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+  }
 }
-  

@@ -28,8 +28,6 @@ document.querySelectorAll('.menu-items').forEach((link) => {
   });
 });
 
-
-
 // Create speaker object
 const speakerslistitem = [
   {
@@ -38,7 +36,7 @@ const speakerslistitem = [
     name: 'Obed Preval',
     title: 'Google Developer Expert in Web Technologies & IoT.',
     image: 'images/speakers/1.yochai.png',
-    achievement: 'Obed is a founder and active contributor to two conferences on mobile and Angular developers respectively.'    
+    achievement: 'Obed is a founder and active contributor to two conferences on mobile and Angular developers respectively.',
   },
   {
     id: '2',
@@ -46,7 +44,7 @@ const speakerslistitem = [
     name: 'Rodino Jules D.M.',
     title: 'Web development expert, Web Technologies GDE, Microsoft Development Technologies MVP',
     image: 'images/speakers/2.kilnam.png',
-    achievement: 'Consulting for various enterprises and companies, co-author of several Microsoft Official Courses (MOCs) and training kits' 
+    achievement: 'Consulting for various enterprises and companies, co-author of several Microsoft Official Courses (MOCs) and training kits',
   },
   {
     id: '3',
@@ -54,7 +52,7 @@ const speakerslistitem = [
     name: 'Ghismonde Arnold',
     title: 'Trainer, consultant and programming architect with a focus on Angular',
     image: 'images/speakers/3.sohyeong.png',
-    achievement: 'Google Developer Expert (GDE) and Trusted Collaborator in the Angular team who writes for O’Reilly and the German Java Magazine.' 
+    achievement: 'Google Developer Expert (GDE) and Trusted Collaborator in the Angular team who writes for O’Reilly and the German Java Magazine.',
   },
   {
     id: '4',
@@ -62,7 +60,7 @@ const speakerslistitem = [
     name: 'Widlyne Nozin',
     title: 'Web developer, author and CEO of NOZINS ENTERPRISES.',
     image: 'images/speakers/4.julia.png',
-    achievement: 'Google developer expert in Angular and web technologies.' 
+    achievement: 'Google developer expert in Angular and web technologies.',
   },
   {
     id: '5',
@@ -70,7 +68,7 @@ const speakerslistitem = [
     name: 'Gidna Chekele Etienne',
     title: 'Developer Advocate for Web Browser Samsung Internet',
     image: 'images/speakers/5.lila.png',
-    achievement: 'Co-chair of the W3C Immersive Web Groups, developing WebXR to bring VR & AR to web browsers.' 
+    achievement: 'Co-chair of the W3C Immersive Web Groups, developing WebXR to bring VR & AR to web browsers.',
   },
   {
     id: '6',
@@ -78,7 +76,7 @@ const speakerslistitem = [
     name: 'Jn Parnel Vital',
     title: 'Frontend developper, author',
     image: 'images/speakers/6.ryan.png',
-    achievement: 'Google developer expert in javaScript and web technologies.' 
+    achievement: 'Google developer expert in javaScript and web technologies.',
   },
 ];
 
