@@ -1,37 +1,52 @@
-## Welcome to GitHub Pages
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-You can use the [editor on GitHub](https://github.com/ForHemer/Capstone-Project/edit/feature/README.md) to maintain and preview the content for your website in Markdown files.
+# International JavaScript Summit 2022
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This is a responsive implementation of a **fictitious International Summit** for the needs of my **Capstone Project**, incorporating all the skills I've learned during module 1.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+## Built With
 
-- Bulleted
-- List
+-HTML
+-CSS
+-JavaScript
 
-1. Numbered
-2. List
+## Live Demo
 
-**Bold** and _Italic_ and `Code` text
+[Live Demo Link](https://forhemer.github.io/Capstone-Project/)
+## Author
 
-[Link](url) and ![Image](src)
-```
+👤 **Hemerson Foreste**
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+- GitHub: [@ForHemer](https://github.com/ForHemer)
+- Twitter: [@HemersonForeste](https://twitter.com/HemersonForeste)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/hemerson-foreste-890685197)
 
-### Jekyll Themes
+## 🤝 Contributing
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ForHemer/Capstone-Project/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Contributions, issues, and feature requests are welcome!
 
-### Support or Contact
+Feel free to check the [issues page](../../issues/).
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Cindy Shin for her [design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
+
