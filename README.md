@@ -18,6 +18,30 @@ This is a responsive implementation of a **fictitious International Summit** for
 ## Live Demo
 
 [Live Demo Link](https://forhemer.github.io/Capstone-Project/)
+
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+- A device that support running browser applications.
+- access to internet connection.
+
+### Setup
+
+#### View pages from the browser
+
+- If you just want to check the webpage/webapp, you have it available on the live demo link.
+
+#### Install locally the code of the application
+
+In order to install a local version of this project and please do the following steps:
+- Install the latest version of a Code editor.
+- install the latest version of GIT. 
+- Go to the repository [Repository](https://github.com/ForHemer/Capstone-Project)
+- Clone the repository
+- Play with the code and enjoy :confetti_ball:
 ## Author
 
 👤 **Hemerson Foreste**
@@ -39,6 +63,10 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Cindy Shin for her [design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+
+## Other Resources
+
+- Font Awesome [Font Awesome](https://fontawesome.com/)
 
 ## 📝 License
 

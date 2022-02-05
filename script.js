@@ -1,6 +1,6 @@
-const hamburgerButton = document.querySelector('.btn-hamburger-menu');
+const hamburgerButton = document.querySelector('.fa-bars');
 const mobileMenu = document.querySelector('.default-navbar');
-const closeButton = document.querySelector('.btn-close');
+const closeButton = document.querySelector('.fa-times');
 
 hamburgerButton.addEventListener('click', (e) => {
   e.target.style.display = 'none';
