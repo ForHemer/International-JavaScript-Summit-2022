@@ -184,7 +184,7 @@
     flex-direction: column;
     padding-top: 90px;
     margin: 0 16px 0 16px;
-    height: 80vh;
+    height: 40%;
   }
 
   #About-Introduction .greetings {
@@ -377,7 +377,8 @@
     height: auto;
   }
 
-  #footer {
+  #footer,
+  #footer-about {
     margin: 50px 0 50px 0;
     display: flex;
     gap: 30px;
@@ -385,11 +386,13 @@
     justify-content: center;
   }
 
-  #footer .commons-creative-logo {
+  #footer .commons-creative-logo,
+  #footer-about .commons-creative-logo {
     width: 40%;
   }
 
-  #footer .copyright {
+  #footer .copyright,
+  #footer-about .copyright {
     width: 40%;
     font-family: 'Lato', sans-serif;
     font-size: 15px;
@@ -410,6 +413,7 @@
     font-weight: bold;
     text-decoration: underline;
     margin-top: 5px;
+    margin-bottom: 20px;
   }
 
   #ccgs2015-logo {
@@ -863,23 +867,34 @@
     height: auto;
   }
 
-  #footer {
+  #footer,
+  #footer-about {
     padding: 50px 0 50px 0;
     display: flex;
     gap: 100px;
     align-items: center;
     justify-content: center;
+    background-color: #fff;
+  }
+
+  #footer-about {
     background-color: #333;
   }
 
-  #footer .commons-creative-logo {
+  #footer .commons-creative-logo,
+  #footer-about .commons-creative-logo {
     width: 15%;
   }
 
-  #footer .copyright {
+  #footer .copyright,
+  #footer-about .copyright {
     width: 35%;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
+    color: #333;
+  }
+
+  #footer-about .copyright {
     color: #fff;
   }
 
