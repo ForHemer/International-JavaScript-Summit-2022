@@ -39,7 +39,7 @@ To get a local copy up and running follow these simple example steps.
 In order to install a local version of this project and please do the following steps:
 - Install the latest version of a Code editor.
 - install the latest version of GIT. 
-- Go to the repository [Repository](https://github.com/ForHemer/Capstone-Project)
+- Go to the [Repository](https://github.com/ForHemer/Capstone-Project)
 - Clone the repository
 - Play with the code and enjoy :confetti_ball:
 ## Author
