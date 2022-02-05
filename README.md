@@ -66,7 +66,7 @@ Give a ⭐️ if you like this project!
 
 ## Other Resources
 
-- Font Awesome [Font Awesome](https://fontawesome.com/)
+- [Font Awesome](https://fontawesome.com/)
 
 ## 📝 License
 
