@@ -17,7 +17,7 @@ This is a responsive implementation of a **fictitious International Summit** for
 
 ## Live Demo
 
-[Live Demo Link](https://forhemer.github.io/Capstone-Project/)
+[Live Demo Link](https://forhemer.github.io/International-JavaScript-Summit-2022/)
 
 ## Getting Started
 
